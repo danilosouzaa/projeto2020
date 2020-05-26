@@ -1,0 +1,171 @@
+!SESSION 2020-05-25 11:56:40.729 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.ui 4 4 2020-05-25 11:57:11.802
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.editors.
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 11:58:26.171
+!MESSAGE Unable to profile application.
+!STACK 0
+"The application being profiled returned a non-zero return code."
+	at com.nvidia.viper.fs.FileSystem.checkNvprofErrorCode(FileSystem.java:200)
+	at com.nvidia.viper.fs.LocalFileSystem.runNvprof(LocalFileSystem.java:585)
+	at com.nvidia.viper.run.TimelineRunner.runWithMonitor(TimelineRunner.java:148)
+	at com.nvidia.viper.run.TimelineRunner$TimelineJob.run(TimelineRunner.java:348)
+	at com.nvidia.viper.ViperJob$1.run(ViperJob.java:106)
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 11:58:38.769
+!MESSAGE Unable to profile application.
+!STACK 0
+"The application being profiled returned a non-zero return code."
+	at com.nvidia.viper.fs.FileSystem.checkNvprofErrorCode(FileSystem.java:200)
+	at com.nvidia.viper.fs.LocalFileSystem.runNvprof(LocalFileSystem.java:585)
+	at com.nvidia.viper.run.TimelineRunner.runWithMonitor(TimelineRunner.java:148)
+	at com.nvidia.viper.run.ProfileRunner$ExpertJob.run(ProfileRunner.java:408)
+	at com.nvidia.viper.ViperJob$1.run(ViperJob.java:106)
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 11:58:40.105
+!MESSAGE unable to perform expert system action CHANGE_STAGE
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:01:41.864
+!MESSAGE Unable to profile application.
+!STACK 0
+"The application being profiled returned a non-zero return code."
+	at com.nvidia.viper.fs.FileSystem.checkNvprofErrorCode(FileSystem.java:200)
+	at com.nvidia.viper.fs.LocalFileSystem.runNvprof(LocalFileSystem.java:585)
+	at com.nvidia.viper.run.TimelineRunner.runWithMonitor(TimelineRunner.java:148)
+	at com.nvidia.viper.run.ProfileRunner$ExpertJob.run(ProfileRunner.java:408)
+	at com.nvidia.viper.ViperJob$1.run(ViperJob.java:106)
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:01:48.148
+!MESSAGE unable to perform expert system action CHANGE_STAGE
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:05:20.360
+!MESSAGE Unable to profile application.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Reference to undefined variable PATH
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.resolve(StringSubstitutionEngine.java:261)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.substitute(StringSubstitutionEngine.java:192)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.performStringSubstitution(StringSubstitutionEngine.java:87)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:592)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:358)
+	at org.eclipse.debug.internal.core.LaunchManager.getEnvironment(LaunchManager.java:1315)
+	at org.eclipse.core.externaltools.internal.launchConfigurations.ProgramLaunchDelegate.launch(ProgramLaunchDelegate.java:104)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.nvidia.viper.fs.LocalFileSystem.runNvprof(LocalFileSystem.java:557)
+	at com.nvidia.viper.run.TimelineRunner.runWithMonitor(TimelineRunner.java:148)
+	at com.nvidia.viper.run.ProfileRunner$ExpertJob.run(ProfileRunner.java:408)
+	at com.nvidia.viper.ViperJob$1.run(ViperJob.java:106)
+!SUBENTRY 1 org.eclipse.core.variables 4 120 2020-05-25 12:05:20.361
+!MESSAGE Reference to undefined variable PATH
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:05:30.513
+!MESSAGE unable to perform expert system action CHANGE_STAGE
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:05:57.334
+!MESSAGE Unable to profile application.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Reference to undefined variable PATH
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.resolve(StringSubstitutionEngine.java:261)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.substitute(StringSubstitutionEngine.java:192)
+	at org.eclipse.core.internal.variables.StringSubstitutionEngine.performStringSubstitution(StringSubstitutionEngine.java:87)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:592)
+	at org.eclipse.core.internal.variables.StringVariableManager.performStringSubstitution(StringVariableManager.java:358)
+	at org.eclipse.debug.internal.core.LaunchManager.getEnvironment(LaunchManager.java:1315)
+	at org.eclipse.core.externaltools.internal.launchConfigurations.ProgramLaunchDelegate.launch(ProgramLaunchDelegate.java:104)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.nvidia.viper.fs.LocalFileSystem.runNvprof(LocalFileSystem.java:557)
+	at com.nvidia.viper.run.TimelineRunner.runWithMonitor(TimelineRunner.java:148)
+	at com.nvidia.viper.run.ProfileRunner$ExpertJob.run(ProfileRunner.java:408)
+	at com.nvidia.viper.ViperJob$1.run(ViperJob.java:106)
+!SUBENTRY 1 org.eclipse.core.variables 4 120 2020-05-25 12:05:57.334
+!MESSAGE Reference to undefined variable PATH
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:06:04.575
+!MESSAGE unable to perform expert system action CHANGE_STAGE
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:06:29.595
+!MESSAGE Unable to profile application.
+!STACK 0
+"The application being profiled returned a non-zero return code."
+	at com.nvidia.viper.fs.FileSystem.checkNvprofErrorCode(FileSystem.java:200)
+	at com.nvidia.viper.fs.LocalFileSystem.runNvprof(LocalFileSystem.java:585)
+	at com.nvidia.viper.run.TimelineRunner.runWithMonitor(TimelineRunner.java:148)
+	at com.nvidia.viper.run.ProfileRunner$ExpertJob.run(ProfileRunner.java:408)
+	at com.nvidia.viper.ViperJob$1.run(ViperJob.java:106)
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:06:35.767
+!MESSAGE unable to perform expert system action CHANGE_STAGE
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:06:49.158
+!MESSAGE Unable to profile application.
+!STACK 0
+"The application being profiled returned a non-zero return code."
+	at com.nvidia.viper.fs.FileSystem.checkNvprofErrorCode(FileSystem.java:200)
+	at com.nvidia.viper.fs.LocalFileSystem.runNvprof(LocalFileSystem.java:585)
+	at com.nvidia.viper.run.TimelineRunner.runWithMonitor(TimelineRunner.java:148)
+	at com.nvidia.viper.run.ProfileRunner$ExpertJob.run(ProfileRunner.java:408)
+	at com.nvidia.viper.ViperJob$1.run(ViperJob.java:106)
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:06:52.468
+!MESSAGE unable to perform expert system action CHANGE_STAGE
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:08:18.274
+!MESSAGE Unable to profile application.
+!STACK 0
+"The application being profiled returned a non-zero return code."
+	at com.nvidia.viper.fs.FileSystem.checkNvprofErrorCode(FileSystem.java:200)
+	at com.nvidia.viper.fs.LocalFileSystem.runNvprof(LocalFileSystem.java:585)
+	at com.nvidia.viper.run.TimelineRunner.runWithMonitor(TimelineRunner.java:148)
+	at com.nvidia.viper.run.ProfileRunner$ExpertJob.run(ProfileRunner.java:408)
+	at com.nvidia.viper.ViperJob$1.run(ViperJob.java:106)
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:08:20.067
+!MESSAGE unable to perform expert system action CHANGE_STAGE
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:08:50.555
+!MESSAGE Unable to profile application.
+!STACK 0
+"The application being profiled returned a non-zero return code."
+	at com.nvidia.viper.fs.FileSystem.checkNvprofErrorCode(FileSystem.java:200)
+	at com.nvidia.viper.fs.LocalFileSystem.runNvprof(LocalFileSystem.java:585)
+	at com.nvidia.viper.run.TimelineRunner.runWithMonitor(TimelineRunner.java:148)
+	at com.nvidia.viper.run.ProfileRunner$ExpertJob.run(ProfileRunner.java:408)
+	at com.nvidia.viper.ViperJob$1.run(ViperJob.java:106)
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:08:52.794
+!MESSAGE unable to perform expert system action CHANGE_STAGE
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:21:04.121
+!MESSAGE Unable to profile application.
+!STACK 0
+"The application being profiled returned a non-zero return code."
+	at com.nvidia.viper.fs.FileSystem.checkNvprofErrorCode(FileSystem.java:200)
+	at com.nvidia.viper.fs.LocalFileSystem.runNvprof(LocalFileSystem.java:585)
+	at com.nvidia.viper.run.TimelineRunner.runWithMonitor(TimelineRunner.java:148)
+	at com.nvidia.viper.run.ProfileRunner$ExpertJob.run(ProfileRunner.java:408)
+	at com.nvidia.viper.ViperJob$1.run(ViperJob.java:106)
+
+!ENTRY com.nvidia.viper 4 0 2020-05-25 12:21:06.109
+!MESSAGE unable to perform expert system action CHANGE_STAGE
+
+!ENTRY com.nvidia.viper 4 0 2020-05-26 12:00:08.154
+!MESSAGE Unable to profile application.
+!STACK 0
+"The application being profiled returned a non-zero return code."
+	at com.nvidia.viper.fs.FileSystem.checkNvprofErrorCode(FileSystem.java:200)
+	at com.nvidia.viper.fs.LocalFileSystem.runNvprof(LocalFileSystem.java:585)
+	at com.nvidia.viper.run.TimelineRunner.runWithMonitor(TimelineRunner.java:148)
+	at com.nvidia.viper.run.ProfileRunner$ExpertJob.run(ProfileRunner.java:408)
+	at com.nvidia.viper.ViperJob$1.run(ViperJob.java:106)
+
+!ENTRY com.nvidia.viper 4 0 2020-05-26 12:00:09.405
+!MESSAGE unable to perform expert system action CHANGE_STAGE
