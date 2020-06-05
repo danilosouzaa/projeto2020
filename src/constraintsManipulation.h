@@ -11,7 +11,10 @@ constraintsReal *AllocStrConstraintsReal(TCont cont, TNumberConstraints nConstra
 
 cutSmall *AllocStrCutSmall(TCont cont, TNumberConstraints nConstraints, TNumberVariables nVariables);
 
+constraintMin *AllocStrConstraintsMin(TCont cont);
+
 void freeStrConstraintsReal(constraintsReal *cut);
+
 
 constraintsReal *fillStructPerLP(LinearProgram *lp, char **nameConstraints, char **nameVariables, int *typeVariables, double *lbVariables, double *ubVariables);
 

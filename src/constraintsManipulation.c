@@ -42,6 +42,23 @@ cutSmall *AllocStrCutSmall(TCont cont, TNumberConstraints nConstraints, TNumberV
     return cut;
 }
 
+
+constraintMin *AllocStrConstraintsMin(TCont cont){
+      size_t size_c= sizeof(constraintMin) +
+                      sizeof(TCoefficients) * (cont) +
+                      sizeof(TPosList) * (cont) +
+                      sizeof(TActivedCut) * (cont);
+
+    constraintMin *c = (constraintMin *)malloc(size_c);
+    assert(c != NULL);
+    memset(c, 0, size_c);
+    c->Coefficients = (TCoefficients *)(c + 1);
+    c->positionOriginal = (TPosList *)(c->Coefficients + cont);
+    c->Cover = (TActivedCut *)(c->positionOriginal + cont);
+    c->cont = cont;
+    return c;
+}
+
 void freeStrConstraintsReal(constraintsReal *cut)
 {
     free(cut->Coefficients);
@@ -51,6 +68,8 @@ void freeStrConstraintsReal(constraintsReal *cut)
     free(cut->xAsterisc);
     free(cut);
 }
+
+
 
 constraintsReal *fillStructPerLP(LinearProgram *lp, char **nameConstraints, char **nameVariables, int *typeVariables, double *lbVariables, double *ubVariables)
 {

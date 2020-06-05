@@ -9,7 +9,8 @@ extern "C"
 {
     
     //#include "preProcessing.h"
-    #include "coverLifted.h"
+    //#include "coverLifted.h"
+    #include "newGrasp.h"
     //#include "lp.h"
 }
 
@@ -117,7 +118,10 @@ int main(int argc, const char *argv[]){
             numberAux = constraintsBinary->numberConstraints;
             if(typeCC==0){
                 
-                constraintsBinary = runCCwithGrasp(constraintsBinary,precision,nameConstraints,nameVariables,szPoolCutsMaxCC, nIterationCCGrasp, alpha,minimal,typeLift);
+                //constraintsBinary = runCCwithGrasp(constraintsBinary,precision,nameConstraints,nameVariables,szPoolCutsMaxCC, nIterationCCGrasp, alpha,minimal,typeLift);
+                constraintsBinary = graspLciAdam(constraintsBinary, precision, nameConstraints, nameVariables, szPoolCutsMaxCC,nIterationCCGrasp, alpha, minimal);
+                //runCCwithGrasp(constraintsBinary,precision,nameConstraints,nameVariables,szPoolCutsMaxCC, nIterationCCGrasp, alpha,minimal,typeLift);
+
             }else{
                 
                 constraintsBinary = runCCGreedy(constraintsBinary,precision,nameConstraints,nameVariables,typeLift);

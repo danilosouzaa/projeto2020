@@ -58,3 +58,12 @@ typedef struct{
     TRightSide *rightSide;
 }cutCover;
 
+
+typedef struct{
+    TCoefficients *Coefficients;
+    TPosList *positionOriginal;
+    TActivedCut *Cover;
+    TRightSide rightSide;
+    TCont cont;
+    
+}constraintMin;
